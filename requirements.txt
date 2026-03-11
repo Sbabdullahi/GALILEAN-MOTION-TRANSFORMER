@@ -1,0 +1,29 @@
+# GMN — Galilean Motion Network
+# Requirements (Python >= 3.9)
+# Install: pip install -r requirements.txt
+
+# ── Deep learning ─────────────────────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ── Data & numerics ───────────────────────────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.10.0
+
+# ── Machine learning utilities ────────────────────────────────────────────────
+scikit-learn>=1.3.0
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.18.0
+kaleido>=0.2.1          # static image export from Plotly
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── Progress bars ─────────────────────────────────────────────────────────────
+tqdm>=4.65.0
+
+# ── Optional: Colab tunnel (only needed in Google Colab) ─────────────────────
+# pyngrok>=7.0.0
