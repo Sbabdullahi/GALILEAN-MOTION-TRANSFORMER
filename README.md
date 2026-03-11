@@ -14,13 +14,6 @@ A physics-informed, interpretable skeleton-based gesture recognition system
 
 GMN is an end-to-end deep learning architecture that recognises contactless hand gestures from Leap Motion skeletal data. It embeds discrete-time **velocity and acceleration** as learnable convolutional parameters (Galilean motion encoding), couples these with **quaternion rotational invariance**, **Vision Transformer** temporal attention, and **cross-modal task-prompt fusion** into a single trainable pipeline.
 
-| Metric | LeapGestureDB | SHREC'17 |
-|---|---|---|
-| Test Accuracy | **97.50%** | **98.21%** |
-| Macro F1 | **0.95** | **0.95** |
-| Baseline (CNN / SA-STGCN) | 86.67% | 97.62% |
-| Physics layer contribution | +2.54 pp | — |
-
 The integrated XAI suite (Integrated Gradients, Attention Rollout, MC-Dropout, Temperature Calibration) provides per-sample transparency without post-hoc surrogate models.
 
 ---
@@ -67,7 +60,7 @@ Each `.txt` file encodes one gesture recording in the Leap Motion SDK output for
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gmn.git
+git clone https://github.com/Sbabdullahi/gmn.git
 cd gmn
 pip install -r requirements.txt
 ```
@@ -198,38 +191,8 @@ Logits  →  Temperature Scaling  →  Calibrated probabilities
 
 ---
 
-## Per-Class Results (LeapGestureDB test set, 120 samples/class)
 
-| Gesture | Prec. | Recall | F1 |
-|---|---|---|---|
-| Click | 0.97 | 0.93 | 0.95 |
-| Left rotation (CW) | 0.90 | 0.95 | 0.92 |
-| Right rotation (CCW) | 0.99 | 0.94 | 0.97 |
-| Increase contrast | 1.00 | 0.90 | 0.95 |
-| Decrease contrast | 0.93 | 0.99 | 0.96 |
-| Zoom in | 0.97 | 0.96 | 0.96 |
-| Zoom out | 0.94 | 0.96 | 0.95 |
-| Move left | 0.90 | 0.99 | 0.94 |
-| Move right | 0.97 | 0.97 | 0.97 |
-| Previous | 0.89 | 0.84 | 0.87 |
-| Next | 0.86 | 0.88 | 0.87 |
-| **Macro avg.** | **0.94** | **0.94** | **0.95** |
-
-The CW/CCW rotation pair exhibits complementary precision–recall inversion, attributable to the absence of an explicit signed angular velocity representation. Previous and Next show mutual confusion from shared trajectory topology.
-
----
-
-## XAI: Move Left Sample
-
-| Signal | Value | Interpretation |
-|---|---|---|
-| Calibrated confidence | 100.0% | Unambiguous lateral sweep |
-| MC-Dropout entropy | 0.000 / 2.398 nats | Zero epistemic uncertainty |
-| Top feature (IG) | `IndexTip_X` = 0.1603 | Lateral fingertip displacement dominates |
-| Bottom feature (IG) | `RingTip_Y` = 0.0081 | Vertical ring position irrelevant |
-| Temperature T* | 1.8441 | Stable across test set |
-
----
+--
 
 ## Citation
 
