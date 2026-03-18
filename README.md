@@ -6,7 +6,7 @@ A physics-informed, interpretable skeleton-based gesture recognition system
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Dataset](https://img.shields.io/badge/Dataset-LeapGestureDB-lightgrey)](https://example.com)
+[![Dataset](https://img.shields.io/badge/Dataset-LeapGestureDB-lightgrey)](https://mineDrive.com)
 
 ---
 
@@ -33,7 +33,7 @@ gmn/
 
 ## Dataset
 
-**LeapGestureDB** — 6,600 recordings from 120 subjects, 11 surgical command classes (600 per class), 100 frames per sequence, 26 semantic Leap Motion features per frame.
+**LeapGestureDB**: 6,600 recordings from 120 subjects, 11 surgical command classes (600 per class), 100 frames per sequence, 26 semantic Leap Motion features per frame.
 
 ```
 LeapGestureDB/
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ```
 
 > **GPU:** PyTorch will use CUDA automatically if available.  
-> **Google Colab:** All three scripts run without modification; see Colab notes below.
+
 
 ---
 
@@ -142,11 +142,11 @@ Then open `http://localhost:8501` in your browser.
 !python main.py --data_path /content/LeapGestureDB --epochs 60
 ```
 
-**Dashboard via ngrok (new cell):**
+**Dashboard via ngrok:**
 ```python
 !pip install pyngrok -q
 from pyngrok import ngrok, conf
-conf.get_default().auth_token = "YOUR_NGROK_TOKEN"   # free at ngrok.com
+conf.get_default().auth_token = "YOUR_NGROK_TOKEN"   #
 import subprocess, time
 subprocess.Popen(["streamlit","run","xai_dashboard.py",
                   "--server.port","8501","--server.headless","true"])
@@ -187,11 +187,6 @@ Logits  →  Temperature Scaling  →  Calibrated probabilities
                                    MC-Dropout uncertainty
 ```
 
-**Total parameters:** ~10.5M · **Model size:** 41.0 MB · **Training:** 26 epochs, ~45 min on Tesla T4
-
----
-
-
 --
 
 ## Citation
@@ -203,7 +198,7 @@ If you use this code or model in your research, please cite:
   title   = {Galilean Motion Network: Physics-Informed Gesture Recognition
              for Contactless Surgical Interfaces},
   author  = {S.B. Abdullahi, et al.},
-  journal = {YOUR JOURNAL},
+  journal = {https://github.com/Sbabdullahi/GALILEAN-MOTION-TRANSFORMER/},
   year    = {2026}
 }
 ```
