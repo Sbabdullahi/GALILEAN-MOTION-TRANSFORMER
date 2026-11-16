@@ -1,0 +1,25 @@
+name: tests
+# Runs the unit tests that back the paper's claims (invariances, leakage-free
+# splits, v1 parameter count, deferral policy) on every push and pull request.
+on:
+  push:
+  pull_request:
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (CPU-only PyTorch)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy scipy scikit-learn pandas matplotlib pytest tqdm
+      - name: Unit tests
+        run: pytest -q tests
+      - name: Synthetic end-to-end smoke test (meaningless numbers)
+        run: |
+          python tests/make_synthetic_leapdb.py --out /tmp/synth --subjects 10 --reps 1
+          python scripts/run_cv.py --data_path /tmp/synth --results /tmp/smoke --folds 5 \
+            --only_folds 0 --seeds 0 --epochs 1 --mc_passes 2 --quiet --models gmn transformer

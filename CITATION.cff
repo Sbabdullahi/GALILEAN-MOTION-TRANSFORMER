@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article and the archived software release below."
+title: "GMN v2: Galilean-frame convolutions with human-in-the-loop deferral for touchless gesture control"
+version: 2.0.0
+date-released: 2026-11-15          # update on release day
+license: MIT
+repository-code: "https://github.com/Sbabdullahi/GALILEAN-MOTION-TRANSFORMER"
+# doi: 10.5281/zenodo.XXXXXXX     # add after Zenodo mints the DOI
+keywords:
+  - hand gesture recognition
+  - touchless interaction
+  - human-in-the-loop
+  - selective prediction
+  - interpretable machine learning
+  - Leap Motion
+authors:
+  # Add ORCID iDs as  orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Al-Otaibi
+    given-names: Shaha
+    affiliation: "Princess Nourah bint Abdulrahman University"
+  - family-names: Abdullahi
+    given-names: Sunusi Bala
+    affiliation: "Sakarya University"
+  - family-names: Saba
+    given-names: Tanzila
+    affiliation: "Prince Sultan University"
+  - family-names: Mirdad
+    given-names: Abeer Rashad
+    affiliation: "Prince Sultan University"
+  - family-names: Abed
+    given-names: Roaa Khalil Mohamed Ali
+    affiliation: "Prince Sultan University"
+# preferred-citation:            # add once the article is accepted
+#   type: article
+#   title: "..."
+#   journal: "..."
+#   doi: "..."
