@@ -1,7 +1,8 @@
 # GMN v2: Galilean-frame convolutions with human-in-the-loop deferral
 
+
 [![tests](https://github.com/Sbabdullahi/GALILEAN-MOTION-TRANSFORMER/actions/workflows/tests.yml/badge.svg)](https://github.com/Sbabdullahi/GALILEAN-MOTION-TRANSFORMER/actions/workflows/tests.yml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24295005.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
