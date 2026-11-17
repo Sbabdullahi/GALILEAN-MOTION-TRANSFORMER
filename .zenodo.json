@@ -1,7 +1,7 @@
 {
   "title": "GMN v2: Galilean-frame convolutions with human-in-the-loop deferral for touchless gesture control",
   "upload_type": "software",
-  "description": "Code, subject-group split files and unit tests for GMN v2, a glass-box hand-gesture recognizer for Leap Motion skeletal data with calibrated human-in-the-loop deferral, evaluated under a leakage-free subject-wise protocol on LeapGestureDB and LMDHG. The datasets are not redistributed; obtain them from their original providers. Trained weights and per-run predictions are archived in a separate Zenodo record linked below.",
+  "description": "Code, subject-group split files and unit tests for GMN v2, a glass-box hand-gesture recognizer for Leap Motion skeletal data with calibrated human-in-the-loop deferral, evaluated under a leakage-free subject-wise protocol on LeapGestureDB and LMDHG. The datasets are not redistributed; obtain them from their original providers.",
   "license": "MIT",
   "keywords": ["hand gesture recognition", "touchless interaction", "human-in-the-loop", "selective prediction", "interpretable machine learning", "Leap Motion"],
   "creators": [
@@ -10,3 +10,4 @@
   "related_identifiers": [{"identifier": "https://github.com/Sbabdullahi/GALILEAN-MOTION-TRANSFORMER", "relation": "isSupplementTo", "scheme": "url"}
   ]
 }
+%Trained weights and per-run predictions are archived in a separate Zenodo record linked belowTrained weights and per-run predictions are archived in a separate Zenodo record linked below
