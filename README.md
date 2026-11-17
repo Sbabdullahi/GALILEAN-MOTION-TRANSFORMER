@@ -78,7 +78,7 @@ The split files (`results/splits.json`) are released so that other groups can us
 See [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md). The model proposes commands, and a person confirms any command below the validated confidence threshold or on the clinician-defined always-confirm list. There has been no clinical, or real-time evaluation.
 
 ## Citing and publishing
-Abdullahi, S. B. (2026). GMN v2: Galilean-frame convolutions with human-in-the-loop deferral for touchless gesture control (Version v2.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24325989
+Abdullahi, S. B. (2026). GMN v2: Galilean-frame convolutions with human-in-the-loop deferral for touchless gesture control (Version v2.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24295004
 
 ## Licence
 MIT (code). The datasets keep their original licences.
