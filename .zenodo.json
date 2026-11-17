@@ -7,5 +7,6 @@
   "creators": [
     {"name": "Abdullahi, Sunusi Bala", "affiliation": "Public University"}
   ],
-  "related_identifiers": []
+  "related_identifiers": [{"identifier": "https://github.com/Sbabdullahi/GALILEAN-MOTION-TRANSFORMER", "relation": "isSupplementTo", "scheme": "url"}
+  ]
 }
